@@ -25,12 +25,16 @@
 html,
 body {
   min-height: 100%;
+  background: var(--background);
 }
 
 body {
   display: grid;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100dvh;
   margin: 0;
+  padding-block-end: 2rem;
   place-items: center;
   background: var(--background);
   color: var(--foreground);
@@ -48,6 +52,7 @@ a {
 }
 
 h1 {
+  margin: 0;
   font-size: 1.5rem;
 }
 
@@ -58,16 +63,11 @@ main {
   max-width: 34rem;
   padding-inline: 1.5rem;
   gap: 1rem;
-  margin-bottom: 2rem;
 }
 
 main p {
   font-size: 0.875rem;
   line-height: 1.65;
-}
-
-header h1 {
-  margin-bottom: 0;
 }
 
 header p,
